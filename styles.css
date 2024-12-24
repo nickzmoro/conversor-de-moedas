@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    color: #ffffffc0;
+}
+
+body {
+    background: url(images/5251283.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .main-content {
+        backdrop-filter: blur(5px);
+        background: #0000001f;
+        padding: 20px;
+        border: 1px solid #ffffff7e;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: auto;
+        min-width: 30vw;
+
+        .interface-conversor {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            p, b {
+                font-size: 14px;
+                margin-bottom: 5px;
+                color: #fff;
+            }
+
+            select, option {
+                color: #000;
+            }
+
+            select, input, button {
+                width: 100%;
+                min-width: 20vw;
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+                color: #000;
+                font-weight: 500;
+            }
+
+            select, input {
+                background: transparent;
+                border: 1px solid #ffffff8f;
+                color: #fff;
+            }
+
+            input::placeholder {
+                color: #ffffff98;
+            }
+
+            button {
+                background-color: rgb(216, 70, 216);
+                padding: 12px 10px;
+                color: #fff;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: rgba(216, 70, 216, 0.829);
+                }
+            }
+        }
+
+        .resultado-conversao {
+            border: 1px solid #ffffff38;
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3px;
+            border-radius: 10px;
+
+            img {
+                width: 50px;
+            }
+
+            .vetor-seta {
+                margin: 10px 0;
+            }
+
+            .resultado {
+                color: #ffffff;
+                font-weight: 700;
+            }
+        }
+    }
+}
